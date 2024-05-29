@@ -1,0 +1,6 @@
+<div class="traffic-light">
+    <div class="light red" [ngClass]="{active: color === 'red'}"></div>
+    <div class="light yellow" [ngClass]="{active: color === 'yellow'}"></div>
+    <div class="light green" [ngClass]="{active: color === 'green'}"></div>
+</div>
+  <button class="crossBtn" (click)="onCrossClicked()" [disabled]="color == 'red'">cross</button>
